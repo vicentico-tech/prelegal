@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Mutual Non-Disclosure Agreement",
+    "description": "Allows two parties to disclose confidential information to each other in connection with a shared purpose while protecting that information from unauthorized use or disclosure.",
+    "filename": "Mutual-NDA.md"
+  },
+  {
+    "name": "Cloud Service Agreement",
+    "description": "Governs the sale and purchase of cloud-hosted software or SaaS products, covering access and use of the service, support, payment, data privacy, warranties, liability, and termination.",
+    "filename": "CSA.md"
+  },
+  {
+    "name": "Design Partner Agreement",
+    "description": "Gives an early customer or design partner access to a product in exchange for feedback that helps the provider develop and improve the product before general release.",
+    "filename": "Design-Partner-Agreement.md"
+  },
+  {
+    "name": "Service Level Agreement",
+    "description": "Defines uptime and support response time commitments for a cloud service, along with the service credits and remedies available if those targets are missed. Used alongside the Cloud Service Agreement.",
+    "filename": "SLA.md"
+  },
+  {
+    "name": "Professional Services Agreement",
+    "description": "Governs the provision of professional or consulting services under one or more statements of work, covering deliverables, intellectual property, fees, warranties, and liability.",
+    "filename": "PSA.md"
+  },
+  {
+    "name": "Data Processing Agreement",
+    "description": "Sets out how a service provider processes personal data on behalf of a customer, including subprocessors, international data transfers, security incident response, and audit rights, to support GDPR and other data protection compliance.",
+    "filename": "DPA.md"
+  },
+  {
+    "name": "Software License Agreement",
+    "description": "Grants a customer a license to install and use on-premises or self-hosted software, covering license scope, updates, open source components, warranties, liability, and termination.",
+    "filename": "Software-License-Agreement.md"
+  },
+  {
+    "name": "Partnership Agreement",
+    "description": "Governs a business partnership between two companies, including each party's obligations, trademark licensing for co-marketing, fees, confidentiality, and liability.",
+    "filename": "Partnership-Agreement.md"
+  },
+  {
+    "name": "Pilot Agreement",
+    "description": "A short-term trial or evaluation agreement that lets a prospective customer test a product or service before committing to a longer-term commercial contract.",
+    "filename": "Pilot-Agreement.md"
+  },
+  {
+    "name": "Business Associate Agreement",
+    "description": "A HIPAA-required agreement between a covered entity and a business associate that governs the use, disclosure, and safeguarding of protected health information (PHI).",
+    "filename": "BAA.md"
+  },
+  {
+    "name": "AI Addendum",
+    "description": "Supplements an underlying agreement to govern the use of AI features, including input and output ownership, model training restrictions, and disclaimers specific to AI-generated content.",
+    "filename": "AI-Addendum.md"
+  }
+]

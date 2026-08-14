@@ -1,0 +1,10 @@
+**/node_modules
+**/.next
+**/out
+**/.venv
+**/__pycache__
+**/*.pyc
+backend/data
+backend/*.egg-info
+.git
+.claude

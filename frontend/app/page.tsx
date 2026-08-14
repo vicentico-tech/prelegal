@@ -23,7 +23,7 @@ export default function Home() {
     <div className={styles.page}>
       <header className={styles.header}>
         <h1>Mutual NDA Creator</h1>
-        <p>Fill in the form to generate a ready-to-sign Mutual Non-Disclosure Agreement.</p>
+        <p>Chat with the assistant to generate a ready-to-sign Mutual Non-Disclosure Agreement.</p>
       </header>
       <NdaApp templateSource={templateSource} />
     </div>

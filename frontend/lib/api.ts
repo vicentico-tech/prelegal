@@ -1,3 +1,5 @@
+import type { NdaFormData, PartialNdaFormData } from "./ndaTypes";
+
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL ?? "";
 
 export interface AuthUser {
@@ -28,4 +30,21 @@ export function signUp(email: string, password: string): Promise<AuthUser> {
 
 export function signIn(email: string, password: string): Promise<AuthUser> {
   return postJson<AuthUser>("/api/auth/signin", { email, password });
+}
+
+export interface ChatMessage {
+  role: "user" | "assistant";
+  content: string;
+}
+
+export interface ChatTurnResponse {
+  reply: string;
+  fields: PartialNdaFormData;
+}
+
+export function sendChatMessage(
+  messages: ChatMessage[],
+  currentFields: NdaFormData,
+): Promise<ChatTurnResponse> {
+  return postJson<ChatTurnResponse>("/api/chat/mnda", { messages, currentFields });
 }

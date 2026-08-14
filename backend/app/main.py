@@ -8,6 +8,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
 from app.auth import router as auth_router
+from app.chat import router as chat_router
 from app.db import reset_db
 
 STATIC_DIR = Path(os.environ.get("STATIC_DIR", Path(__file__).resolve().parent.parent / "static"))
@@ -29,6 +30,7 @@ app.add_middleware(
 )
 
 app.include_router(auth_router)
+app.include_router(chat_router)
 
 if (STATIC_DIR / "_next").is_dir():
     app.mount("/_next", StaticFiles(directory=STATIC_DIR / "_next"), name="next-assets")

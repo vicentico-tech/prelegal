@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import NdaForm from "./NdaForm";
+import NdaChat from "./NdaChat";
 import NdaDocument from "./NdaDocument";
 import { emptyNdaFormData } from "@/lib/ndaTypes";
 import styles from "./NdaApp.module.css";
@@ -11,9 +11,9 @@ export default function NdaApp({ templateSource }: { templateSource: string }) {
 
   return (
     <div className={styles.layout}>
-      <div className={`${styles.pane} ${styles.formPane}`}>
-        <h2 className={styles.paneHeading}>Fill in the details</h2>
-        <NdaForm data={data} onChange={setData} />
+      <div className={`${styles.pane} ${styles.chatPane}`}>
+        <h2 className={styles.paneHeading}>Chat with the assistant</h2>
+        <NdaChat fields={data} onFieldsChange={setData} />
       </div>
 
       <div className={`${styles.pane} ${styles.documentPane}`}>
